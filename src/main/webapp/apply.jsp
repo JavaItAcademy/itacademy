@@ -23,5 +23,7 @@
 	</p>
 	<input type="submit" name="submit">
 </form>
+<br>
+<a href="index.jsp">Back</a>
 </body>
 </html>

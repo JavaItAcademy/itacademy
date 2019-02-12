@@ -5,6 +5,6 @@
 </head>
 <body>
 <a href="apply.jsp">Создать заявку</a>
-<a href="">Посмотреть заявки</a>
+<a href="list">Посмотреть заявки</a>
 </body>
 </html>

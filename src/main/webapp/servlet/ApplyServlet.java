@@ -16,6 +16,8 @@ public class ApplyServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Application application = null;
+        DatabaseConnector db = new DatabaseConnector();
+
         System.out.println(req.getParameter("isOnline"));
         boolean result;
         try {
@@ -26,7 +28,7 @@ public class ApplyServlet extends HttpServlet {
                     req.getParameter("email"),
                     req.getParameter("isOnline") != null
              );
-            result = DatabaseConnector.addApplication(application);
+            result = db.addApplication(application);
 
         }
         catch (NullPointerException e) {
